@@ -6,6 +6,8 @@
   --accent-color: #2196f3;
   --hero-color: #2f303a;
   --box-shadow-color: rgba(0, 0, 0, 0.15);
+  --adress-color:color: rgba(255, 255, 255, 0.6);
+  /* Sorry */
 }
 body {
   font-family: 'Roboto', 'Times New Roman', 'Verdana', 'Tahoma', sans-serif;
@@ -27,6 +29,7 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+
 .logo > .primary {
   color: var(--accent-color);
 }
@@ -38,7 +41,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-color);
+  color: inherit;
 }
 .menu-nav .link:hover,
 .menu-nav .link:focus {
@@ -81,6 +84,73 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-color);
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.features h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features p {
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--phone-color);
+}
+.activity > .title,
+.team > .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 .button {
   cursor: pointer;
+}
+.teammate .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+}
+.teammate .post {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--phone-color);
+}
+.footer {
+  background-color: var(--hero-color);
+}
+.contact .link {
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color:var(--adress-color);
+}
+.contact >.list-item{
+  color:var(--primary-color);
+}
+.secondary.second{
+  color:var(--primary-color);
 }
