@@ -14,6 +14,9 @@ body {
   background-color: var(--primary-color);
   color: var(--main-color);
 }
+button {
+  font-family: inherit;
+}
 /*  */
 .list {
   list-style: none;
@@ -177,7 +180,4 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--phone-color);
-}
-.button {
-  font-family: inherit;
 }
