@@ -14,9 +14,9 @@ body {
   background-color: var(--primary-color);
   color: var(--main-color);
 }
-button {
+/* button {
   font-family: inherit;
-}
+} */
 /*  */
 .list {
   list-style: none;
@@ -123,6 +123,7 @@ button {
   letter-spacing: 0.03em;
 }
 .button {
+  font-family: inherit;
   cursor: pointer;
   color: inherit;
 }
