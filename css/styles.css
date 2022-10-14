@@ -121,6 +121,7 @@ body {
 }
 .button {
   cursor: pointer;
+  color:inherit;
 }
 .teammate .name {
   font-weight: 500;
@@ -153,4 +154,28 @@ body {
 }
 .secondary.second{
   color:var(--primary-color);
+}
+.examples .button{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.examples .button:hover,
+.examples .button:focus {
+  background-color: var(--accent-color);
+  color:var(--primary-color);
+}
+.examples .name{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+}
+.examples .category{
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+color: var(--phone-color);
 }
