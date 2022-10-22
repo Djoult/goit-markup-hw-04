@@ -45,7 +45,7 @@ body {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 .section {
   padding-top: 94px;
@@ -164,6 +164,8 @@ body {
 }
 .activity .title,
 .team .title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
