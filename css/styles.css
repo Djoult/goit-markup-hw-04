@@ -87,11 +87,15 @@ body {
   color: var(--accent-color);
 }
 .menu-nav .list-item + .list-item {
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 .contact-nav {
   display: flex;
+  margin-left: auto;
+}
+.contact-nav .list-item + .list-item {
+  margin-left: 50px;
 }
 .contact-nav .link {
   font-weight: 500;
@@ -112,10 +116,10 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-color);
+  margin-bottom: 40px;
 }
 .hero .button {
   background: var(--accent-color);
@@ -126,7 +130,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -159,8 +162,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--phone-color);
 }
-.activity > .title,
-.team > .title {
+.activity .title,
+.team .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -203,6 +206,8 @@ body {
 .secondary.second {
   color: var(--primary-color);
 }
+
+/* Portfolio */
 .examples .button {
   font-weight: 500;
   font-size: 16px;
