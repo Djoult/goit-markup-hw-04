@@ -1,3 +1,11 @@
+/* html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
 :root {
   --main-color: #212121;
   --logo-color: #000000;
