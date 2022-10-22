@@ -58,6 +58,9 @@ body {
 .menu-nav .link:focus {
   color: var(--accent-color);
 }
+.menu-nav .link.current {
+  color: var(--accent-color);
+}
 .contact-nav .link {
   font-weight: 500;
   font-size: 14px;
