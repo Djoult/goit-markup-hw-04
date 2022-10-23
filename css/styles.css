@@ -17,6 +17,7 @@
   --adress-color: rgba(255, 255, 255, 0.6);
   --border-bottom-color: #ececec;
   --examples-border-color: #eeeeee;
+  --team-section-bg-color: #f5f4fa;
 }
 /* Selectors */
 body {
@@ -226,6 +227,9 @@ body {
   margin-left: 30px;
 }
 /* Team */
+.team.section {
+  background-color: var(--team-section-bg-color);
+}
 .team-list {
   display: flex;
   flex-wrap: wrap;
