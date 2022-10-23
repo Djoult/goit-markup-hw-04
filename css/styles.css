@@ -16,6 +16,7 @@
   --box-shadow-color: rgba(0, 0, 0, 0.15);
   --adress-color: rgba(255, 255, 255, 0.6);
   --border-bottom-color: #ececec;
+  --examples-border-color: #eeeeee;
 }
 /* Selectors */
 body {
@@ -328,6 +329,7 @@ body {
   /* max-width: 100%;
   height: auto; */
 }
+
 /* .portfolio-list .list-item {
   width: 370px;
   width: calc((100% - 60px) / 3);
@@ -350,4 +352,8 @@ body {
   width: 322px;
   margin-right: auto;
   margin-left: auto;
+}
+.portfolio-list .list-item {
+  max-width: 370px;
+  border: 1px solid var(--examples-border-color);
 }
