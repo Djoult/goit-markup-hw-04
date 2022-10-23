@@ -320,13 +320,20 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   /* margin-right: -15px; */
 }
-.portfolio-list .list-item {
-  width: 370px;
-  /* width: calc((100% - 60px) / 3); */
-  /* margin-right: 15px; */
+.portfolio-list img {
+  display: block;
+  /* max-width: 100%;
+  height: auto; */
 }
+/* .portfolio-list .list-item {
+  width: 370px;
+  width: calc((100% - 60px) / 3);
+  margin-right: 15px; 
+  }*/
+
 .portfolio-list .list-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
