@@ -346,3 +346,8 @@ body {
   margin-right: 0px;
   margin-bottom: 20px;
 }
+.info {
+  width: 322px;
+  margin-right: auto;
+  margin-left: auto;
+}
