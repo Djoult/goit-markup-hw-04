@@ -375,10 +375,12 @@ body {
   /* margin-bottom: 20px; */
 }
 .info {
-  min-width: 322px;
+  max-width: 370px;
   padding: 20px 24px;
+  border-right: 1px solid var(--examples-border-color);
+  border-left: 1px solid var(--examples-border-color);
+  border-bottom: 1px solid var(--examples-border-color);
 }
 .portfolio-list .list-item {
   max-width: 370px;
-  border: 1px solid var(--examples-border-color);
 }
