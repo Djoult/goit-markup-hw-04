@@ -360,8 +360,25 @@ img {
 .socials-list > .list-item {
   flex-basis: 44px;
 }
-
 .teammate-info .link {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+
+  border-radius: 50%;
+  display: block;
+  background-color: transparent;
+  color: var(--clients-logo-color);
+}
+.teammate-info .link:hover,
+.teammate-info .link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+.teammate-info .social-icon {
+  fill: currentColor;
+}
+/* .teammate-info .link {
   stroke: var(--clients-logo-color);
   color: transparent;
 }
@@ -370,9 +387,7 @@ img {
   stroke: var(--primary-color);
   color: var(--accent-color);
 }
-.teammate-info .social-icon {
-  fill: currentColor;
-}
+ */
 
 /* Clients */
 .clients-list {
