@@ -70,7 +70,7 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
 .section {
@@ -369,6 +369,7 @@ img {
 /* Clients */
 .clients-list {
   display: flex;
+  justify-content: center;
   gap: var(--indent);
 }
 .clients-list .list-item {
@@ -382,6 +383,7 @@ img {
   border: 1px solid var(--accent-color);
 }
 .clients-logo {
+  display: block;
   fill: currentColor;
 }
 /* Footer */
