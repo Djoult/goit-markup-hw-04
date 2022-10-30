@@ -16,6 +16,7 @@
   --layout-color: rgba(47, 48, 58, 0.4);
   --box-shadow-color: rgba(0, 0, 0, 0.15);
   --adress-color: rgba(255, 255, 255, 0.6);
+  --footer-socials-bg-color: rgba(255, 255, 255, 0.1);
   --border-bottom-color: #ececec;
   --examples-border-color: #eeeeee;
   --team-section-bg-color: #f5f4fa;
@@ -282,7 +283,7 @@ img {
 .astronaut::before {
   background-image: url('../images/astronaut.svg');
 } */
-.feature-list .list-item + .list-item {
+.feature-list > .list-item + .list-item {
   margin-left: 30px;
 }
 
@@ -324,8 +325,8 @@ img {
 .team-list img {
   display: block;
 } */
-.activity-list .list-item + .list-item,
-.team-list .list-item + .list-item {
+.activity-list > .list-item + .list-item,
+.team-list > .list-item + .list-item {
   margin-left: 30px;
 }
 /* Team */
@@ -336,7 +337,7 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
-.team-list .list-item {
+.team-list > .list-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -358,19 +359,36 @@ img {
   letter-spacing: 0.03em;
 }
 .teammate .post {
-  /* margin-top: 0;
-  margin-bottom: 0; */
+  /* margin-top: 0; */
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--phone-color);
 }
+.socials-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.socials-list > .list-item {
+  flex-basis: 44px;
+}
+.teammate-info .social-icon {
+  fill: none;
+  stroke: var(--clients-logo-color);
+}
+.teammate-info .social-icon:hover {
+  fill: var(--accent-color);
+  stroke: var(--primary-color);
+}
 /* Clients */
 .clients-list {
   display: flex;
   justify-content: center;
   gap: var(--indent);
+  cursor: pointer;
 }
 .clients-list .list-item {
   border: 1px solid var(--clients-logo-color);
@@ -414,7 +432,28 @@ img {
 .secondary.second {
   color: var(--primary-color);
 }
-
+.footer-join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.footer .socials-list {
+  display: flex;
+}
+.socials-list > .list-item {
+  flex-basis: 44px;
+}
+.socials-footer .social-icon {
+  fill: var(--footer-socials-bg-color);
+  stroke: var(--primary-color);
+}
+.socials-footer .social-icon:hover {
+  fill: var(--accent-color);
+  stroke: var(--primary-color);
+}
 /* Portfolio */
 .button-list {
   display: flex;
