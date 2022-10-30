@@ -71,7 +71,7 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .section {
@@ -445,26 +445,29 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-color);
+  margin-bottom: 20px;
 }
-.footer .socials-list {
-  display: flex;
-}
-.socials-list > .list-item {
-  flex-basis: 44px;
-}
-
-.footer .socials-list .link {
+.socials-footer .link {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
   display: block;
-  stroke: var(--primary-color);
-  color: var(--footer-socials-bg-color);
+  background-color: var(--footer-socials-bg-color);
+  color: var(--primary-color);
 }
-.footer .socials-list .link:hover,
-.footer .socials-list .link:focus {
-  stroke: var(--primary-color);
-  color: var(--accent-color);
+.socials-footer .link:hover,
+.socials-footer .link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
 }
 .socials-footer .social-icon {
   fill: currentColor;
+}
+.footer .container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
 }
 /* Portfolio */
 .button-list {
@@ -473,6 +476,10 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
+}
+.socials-footer {
+  align-self: flex-start;
+  margin-top: 12px;
 }
 .examples .button {
   padding: 6px 22px;
