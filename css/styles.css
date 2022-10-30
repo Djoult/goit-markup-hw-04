@@ -90,6 +90,7 @@ img {
 .header {
   border-bottom: 1px solid var(--border-bottom-color);
 }
+
 .logo {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -144,11 +145,17 @@ img {
   display: flex;
   margin-left: auto;
 }
+/* .contact-nav .list-item {
+  display: inline-flex;
+  align-items: center;
+  color: var(--phone-color);
+} */
 .contact-nav .list-item + .list-item {
   margin-left: 50px;
 }
 .contact-nav .link {
-  display: block;
+  display: inline-flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -157,6 +164,10 @@ img {
   letter-spacing: 0.02em;
   color: var(--phone-color);
 }
+.header-icon {
+  margin-right: 10px;
+}
+
 /* .contact-nav .list-item:nth-child(1) .link:before */
 /* .contact-nav .link:before {
   display: inline-block;
@@ -175,6 +186,13 @@ img {
 .contact-nav .link:focus {
   color: var(--accent-color);
 }
+.header-icon {
+  fill: currentColor;
+}
+
+/* .header-icon.smartphone:hover {
+  fill: var(--accent-color);
+} */
 /* Hero */
 
 .hero {
