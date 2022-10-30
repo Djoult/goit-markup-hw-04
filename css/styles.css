@@ -258,31 +258,16 @@ img {
   --items: 4;
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
 }
-.button-icon {
-  margin-bottom: 10px;
-}
-/* .feature-list > .list-item::before {
-  display: block;
-  content: '';
-  height: 120px;
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--team-section-bg-color);
+  width: 270px;
+  height: 120px;
 }
-.antenna::before {
-  background-image: url('../images/antenna.svg');
-}
-.clock::before {
-  background-image: url('../images/clock.svg');
-}
-.diagram::before {
-  background-image: url('../images/diagram.svg');
-}
-.astronaut::before {
-  background-image: url('../images/astronaut.svg');
-} */
+
 .feature-list > .list-item + .list-item {
   margin-left: 30px;
 }
@@ -375,14 +360,20 @@ img {
 .socials-list > .list-item {
   flex-basis: 44px;
 }
-.teammate-info .social-icon {
-  fill: none;
+
+.teammate-info .link {
   stroke: var(--clients-logo-color);
+  color: transparent;
 }
-.teammate-info .social-icon:hover {
-  fill: var(--accent-color);
+.teammate-info .link:hover,
+.teammate-info .link:focus {
   stroke: var(--primary-color);
+  color: var(--accent-color);
 }
+.teammate-info .social-icon {
+  fill: currentColor;
+}
+
 /* Clients */
 .clients-list {
   display: flex;
@@ -446,13 +437,19 @@ img {
 .socials-list > .list-item {
   flex-basis: 44px;
 }
-.socials-footer .social-icon {
-  fill: var(--footer-socials-bg-color);
+
+.footer .socials-list .link {
+  display: block;
   stroke: var(--primary-color);
+  color: var(--footer-socials-bg-color);
 }
-.socials-footer .social-icon:hover {
-  fill: var(--accent-color);
+.footer .socials-list .link:hover,
+.footer .socials-list .link:focus {
   stroke: var(--primary-color);
+  color: var(--accent-color);
+}
+.socials-footer .social-icon {
+  fill: currentColor;
 }
 /* Portfolio */
 .button-list {
@@ -537,4 +534,8 @@ img {
 }
 .portfolio-list .list-item {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+}
+.portfolio-list .list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
