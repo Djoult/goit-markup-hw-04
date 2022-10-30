@@ -239,7 +239,10 @@ img {
   --items: 4;
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
 }
-.feature-list > .list-item::before {
+.button-icon {
+  margin-bottom: 10px;
+}
+/* .feature-list > .list-item::before {
   display: block;
   content: '';
   height: 120px;
@@ -260,7 +263,7 @@ img {
 }
 .astronaut::before {
   background-image: url('../images/astronaut.svg');
-}
+} */
 .feature-list .list-item + .list-item {
   margin-left: 30px;
 }
