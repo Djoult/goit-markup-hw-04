@@ -323,6 +323,7 @@ img {
   flex-wrap: wrap;
 }
 .team-list > .list-item {
+  background-color: var(--primary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -396,13 +397,19 @@ img {
   gap: var(--indent);
   cursor: pointer;
 }
-.clients-list .list-item {
+
+.clients-list .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
   border: 1px solid var(--clients-logo-color);
   border-radius: 4px;
   color: var(--clients-logo-color);
 }
-.clients-list .list-item:hover,
-.clients-list .list-item:focus {
+.clients-list .link:hover,
+.clients-list .link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
